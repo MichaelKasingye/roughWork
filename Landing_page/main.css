@@ -1,0 +1,142 @@
+header{
+    position: relative;
+    height:40em ;
+    width: 100%;
+border: 5px solid green;
+}
+
+a{
+    text-decoration: none;
+}
+.menu{
+     display:none;
+ }
+
+.navigation{
+    border: 5px solid red;
+    display: inline;
+    
+}
+.logo{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10px;
+    border: 5px solid green;
+    text-align: left;
+    float: left;
+    padding: 10px;
+}
+
+.navigation_pages{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10px;
+    border: 5px solid blue;
+    float: right;
+    word-spacing: 15px;
+    padding-right: 10px;
+    
+}
+.page_link{
+    text-decoration: none;
+    list-style:none;
+    display: inline;
+    }
+
+.header_intro_links{
+    
+    text-decoration: none;
+}
+.header_intro_links{
+    position: relative;
+    top: 19em;
+    border: 3px solid green;
+    text-align: center;
+    width: 100%;
+    
+}
+/* .header_content{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.header_content a{
+    border: 5px solid blue;
+    text-decoration: none;
+    text-align: left;
+    
+    }
+
+    /* @ media queries */
+    @media(max-width:687px){
+        /* [class*="col-"] {
+            width: 100%;
+          } */
+          .navigation_pages{
+            position: -webkit-sticky;
+            position: sticky;
+            top: 10px;
+            /* height:100px; */
+            float: right;
+            display: block;
+            border: 3px solid black;
+          }
+          .navigation_pages_group .page_link{
+            display: none;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 10px;
+            float: right;
+          }
+          .page_link{
+            text-decoration: none;
+            list-style:none;
+            
+            }
+            .menu{
+            display:block;
+            padding: 5px;
+            letter-spacing: 2px;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 1px;
+            float: right;
+            border: 3px solid rebeccapurple;
+            text-align: right;
+            
+            }
+            #navigation_pages {
+                border: 3px solid yellowgreen;
+                float: right;
+                display: flex;
+                flex-direction: column;
+                           
+            }
+            #navigation_pages_group{
+                position: relative;
+                border: 3px solid orchid;
+                float: left;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                width: 50px;
+                padding-left: 20px;
+            }
+            #navigation_pages_group a{
+                color:black;
+                letter-spacing: 3px;
+                margin-right: 13px;
+                
+            }
+            .navigation_pages:hover {
+                background-color: gray;
+            }
+            .navigation_pages:hover #navigation_pages_group li{
+                 display: block;
+                 border: 3px solid orchid;
+
+            }
+    }

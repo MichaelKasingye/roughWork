@@ -1,0 +1,156 @@
+body{
+    margin: 0px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+header{
+    background-image: url("https://images.pexels.com/photos/120049/pexels-photo-120049.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 38em;
+    width: 100%;
+    
+}
+.background_Shadow{
+    background-image: url("https://support.discord.com/hc/user_images/p3ayzhZ2tMvRbQyMzD31TA.png");
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 38em;
+    width: 100%;
+    opacity: 0.6;
+    
+}
+.header{
+    background-color: rgba(0,0,0,0.9);
+    z-index: 2;
+}
+
+
+a{
+    text-decoration: none;
+}
+nav{
+    position:-webkit-sticky; 
+    position: sticky; 
+    top: 10px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+nav .logo{
+    border: 3px solid wheat;
+    padding-top: 15px;
+    text-align: justify;
+    color: whitesmoke;
+    margin-left: 10px;
+    border-radius: 9px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+.menu{
+    display: none;
+}
+nav .navigation_pages{
+    text-align: left;
+    padding-right: 5px;
+    word-spacing: 15px;
+    height: 17px;
+    color: white;
+}
+#navigation_pages_content{
+    color: whitesmoke;
+}
+ul .page_link {
+    list-style: none;
+    display: inline;
+    margin-right: 10px;  
+}
+.page_link a{
+    color: whitesmoke;
+    margin: 1px;
+    padding: 5px;
+}
+
+header .header_intro_links{
+    margin-top: 16em;
+}
+.header_intro_links{
+    
+    text-align: center;  
+}
+.header_intro_links a{
+    border: 2px solid whitesmoke;
+    margin: 5px;
+    font-size: 23px;
+    padding: 5px;
+    border-radius: 10px;
+    color: whitesmoke;
+}
+ul .page_link{
+    height: 17px;
+    
+}
+.page_link a:hover{
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 5px;
+    
+}
+.header_intro_links a:hover{
+    background-color: whitesmoke;
+    color: black;
+}
+
+@media(max-width:687px){
+    .menu{
+        display:flex;
+        padding: 5px;
+        letter-spacing: 2px;
+        position: -webkit-sticky;
+        position: relative;
+        top: 1px;
+        float: right;
+        border: 1px solid wheat;
+        text-align: right;
+        border-radius: 9px;
+        font-weight: bold;
+        
+        }
+        
+        nav .logo{
+         border: 1px solid wheat;
+        padding: 5px;
+        text-align: justify;
+        border-radius: 9px;
+        margin-left: 5px;
+        font-weight: bold;
+        letter-spacing: 5px;
+     }
+        ul .page_link{
+            display: none;
+        }
+        ul .page_link{
+            transition: height 1s;
+        }
+        .navigation_pages:hover ul .page_link{
+            display: flex;
+            border: 3px solid gainsboro;
+            background-color: gainsboro;
+            color: gray;
+            
+         }
+         /* .navigation_pages{
+            transition: height 1s;
+         } */
+         ul .page_link:hover{
+        height: 40px;
+    }
+    .header_intro_links a:hover{
+        background-color: whitesmoke;
+        color: black;
+    }
+}
